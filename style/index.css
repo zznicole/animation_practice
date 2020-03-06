@@ -13,14 +13,17 @@ body {
     100% {background-color: lightblue;}
 }
 
-
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 
 .text {
     display: flex;
-
-
+    justify-content: space-between;
 }
 
 h2 {
@@ -29,7 +32,6 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-style: bold;
     margin-top: 20px;
-    margin-left: 50px;
     text-shadow: 2px 2px 2px darkgreen;
 }
 
@@ -45,12 +47,12 @@ h1 {
     margin-right: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
-    
 }
 
 .happy {
     margin-right: 30px;
 }
+
 .birthday{
     margin-right: 5px;
 }
@@ -61,7 +63,6 @@ h1 {
      font-family: "freckle face";
      text-shadow: 2px 2px 2px rgb(119, 79, 4);
      margin-top: 0px;
-     margin-left: 250px;
      position: relative;
 }
 
@@ -69,7 +70,7 @@ h1 {
     max-width: 60px;
     max-height: 60px;
     position: absolute;
-    left: 616px;
+    left: 576px;
     top:-218px;
 }
 
@@ -85,9 +86,8 @@ h1 {
 
 @keyframes rocket {
     0% {right: 1000px; top: 800px; transform: scale(1);}
-    100% {right: 280px; top:-112px; transform: scale(0.08);}
+    100% {right: 40px; top: -218px; transform: scale(0.08);}
 }
-
 
 .clouds {
     width: 100%;
@@ -111,7 +111,6 @@ h1 {
 .cloud__left {
     width: 400px;
     height: 300px;
-    margin-right: -300px;
 }
 
 .cloud__middle {
@@ -125,5 +124,4 @@ h1 {
     width: 270px;
     height: 200px;
     transform: scale(1.2);
-    margin-left: -300px;
 }
